@@ -1,0 +1,49 @@
+#container-1 {
+  background-image: url(../images/vote_1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#container-2 {
+  background-image: url(../images/vote_2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#container-3 {
+  background-color: #1abc9c;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#cont-1-text,
+#cont-2-text,
+#cont-3-text {
+  margin-top: 280px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#cont-desc-1 {
+  font-size: 13pt;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#cont-desc-2 {
+  font-size: 13pt;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#cont-desc-3 {
+  font-size: 13pt;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#cont-desc-3 > a {
+  font-size: 13pt;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}

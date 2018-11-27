@@ -1,0 +1,8 @@
+.list-container {
+  background-color: #f7f7f7;
+  overflow-y: scroll;
+  margin-top: -30px;
+  max-height: 520px;
+  height: 520px;
+  padding-top: 20px;
+}

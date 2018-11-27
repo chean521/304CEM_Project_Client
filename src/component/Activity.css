@@ -1,0 +1,41 @@
+.bg-1 {
+  background-color: #9d9d9d;
+  color: #ffffff;
+}
+
+.list-group {
+  background-color: rgba(153, 153, 153, 0.5);
+}
+
+.Search_Input {
+  font-size: 12pt;
+  height: 30px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #003387;
+  color: white;
+  font-weight: bold;
+  transition: background-color ease-in-out 1s;
+  -webkit-transition: background-color ease-in-out 1s;
+  -moz-transition: background-color ease-in-out 1s;
+  -o-transition: background-color ease-in-out 1s;
+}
+
+.Search_Input:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.togg-icon .rotate-fa {
+  float: right;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  color: white;
+}
+
+.togg-icon.collapsed .rotate-fa {
+  transform: rotate(-180deg) !important;
+  -webkit-transform: rotate(-180deg) !important;
+}
