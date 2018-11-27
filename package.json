@@ -42,6 +42,5 @@
     "@fortawesome/fontawesome-free": "^5.5.0"
   },
   "author": "Oscar Loh",
-  "license": "ISC",
-  "proxy": "https://webapi-oscar-server.herokuapp.com"
+  "license": "ISC"
 }
