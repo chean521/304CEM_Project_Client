@@ -30,22 +30,44 @@ class AdminMgr extends Component {
       credentials: 'same-origin'
     })
       .then(res => {
-        if (typeof res.data === 'undefined') {
+        if (typeof res.data.data === 'undefined') {
           if (this.state.bkp_authentication == false) {
-            this.setState({ _interface: 0 });
+            this.setState({
+              _interface: 0,
+              bkp_authentication: this.state.bkp_authentication
+            });
           } else {
-            this.setState({ _interface: 1 });
+            this.setState({
+              _interface: 1,
+              bkp_authentication: this.state.bkp_authentication
+            });
           }
         } else {
           if (res.data.data == null) {
-            this.setState({ _interface: 0 });
+            this.setState({
+              _interface: 0,
+              bkp_authentication: this.state.bkp_authentication
+            });
           } else {
-            this.setState({ _interface: 1 });
+            this.setState({
+              _interface: 1,
+              bkp_authentication: this.state.bkp_authentication
+            });
           }
         }
       })
       .catch(err => {
-        this.setState({ _interface: 0 });
+        if (this.state.bkp_authentication == false) {
+          this.setState({
+            _interface: 0,
+            bkp_authentication: this.state.bkp_authentication
+          });
+        } else {
+          this.setState({
+            _interface: 1,
+            bkp_authentication: this.state.bkp_authentication
+          });
+        }
       });
   };
 
