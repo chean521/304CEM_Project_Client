@@ -17,7 +17,7 @@ class App extends Component {
   componentDidMount() {
     fetch('https://webapi-oscar-server.herokuapp.com/SessMgr', {
       method: 'get',
-      credentials: 'include'
+      credentials: 'same-origin'
     });
   }
 
