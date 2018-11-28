@@ -15,9 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    Axios.get('https://webapi-oscar-server.herokuapp.com/SessMgr', {
-      withCredentials: true
-    })
+    Axios.get('https://webapi-oscar-server.herokuapp.com/SessMgr')
       .then(res => {})
       .catch(err => {});
   }
