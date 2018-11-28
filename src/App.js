@@ -15,9 +15,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    Axios.get('https://webapi-oscar-server.herokuapp.com/SessMgr')
-      .then(res => {})
-      .catch(err => {});
+    fetch('https://webapi-oscar-server.herokuapp.com/SessMgr', {
+      method: 'get',
+      credentials: 'include'
+    });
   }
 
   render = () => {
