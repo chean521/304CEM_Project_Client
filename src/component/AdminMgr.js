@@ -25,7 +25,8 @@ class AdminMgr extends Component {
 
   checkSession = () => {
     Axios.get('https://webapi-oscar-server.herokuapp.com/SessMgr/GetVal', {
-      params: { SessKey: 'admin_isAuthenticated' }
+      params: { SessKey: 'admin_isAuthenticated' },
+      withCredentials: true
     })
       .then(res => {
         if (res.data.data == null) {
@@ -53,7 +54,8 @@ class AdminMgr extends Component {
       Axios.get(
         'https://webapi-oscar-server.herokuapp.com/AdminMgr/ValidAdmin',
         {
-          params: { Password: this.PassInput.value }
+          params: { Password: this.PassInput.value },
+          withCredentials: true
         }
       )
         .then(res => {
@@ -63,7 +65,8 @@ class AdminMgr extends Component {
             Axios.get(
               'https://webapi-oscar-server.herokuapp.com/SessMgr/AddKey',
               {
-                params: { SessKey: 'admin_isAuthenticated', SessVal: 'yes' }
+                params: { SessKey: 'admin_isAuthenticated', SessVal: 'yes' },
+                withCredentials: true
               }
             ).then(res => {
               this.checkSession();
@@ -84,7 +87,8 @@ class AdminMgr extends Component {
 
   LogOutClicked = e => {
     Axios.get('https://webapi-oscar-server.herokuapp.com/SessMgr/DelKey', {
-      params: { SessKey: 'admin_isAuthenticated' }
+      params: { SessKey: 'admin_isAuthenticated' },
+      withCredentials: true
     }).then(res => {
       this.checkSession();
     });
